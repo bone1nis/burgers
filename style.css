@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/*Общие  стили*/
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #1C1C1C;
+    color: #fff;
+    margin: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    border: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    margin: 0;
+}
+
+.container {
+    width: 1142px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container_flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_size {
+    padding: 25px 0;
+}
+
+.header__link{
+    font-size: 14px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.header__link_active{
+    opacity: 1;
+}
+
+.header__link:hover{
+    opacity: 0.9;
+}
+.header__logo {
+
+}
+
+.header__nav {
+
+}
+
+.header__list {
+    display: flex;
+    gap: 30px;
+}
+
+.btn {
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #F6762C;
+    font-weight: 500px;
+    transition: opacity 0.3s;
+    width: 165px;
+    height: 49px;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+.main {
+
+}
+
+.welcome {
+    background-image: url("./images/welcome-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 240px 0;
+    margin-top: -99px;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.welcome__container_size {
+    width: 523px;
+}
+
+.welcome__subtitle {
+    font-size: 14px;
+}
+
+.welcome__title {
+    font-size: 57px;
+}
+
+.welcome__text {
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+.welcome__subtitle_size {
+    margin-bottom: 7px;
+}
+
+.welcome__title_size {
+    margin-bottom: 38px;
+}
+
+.welcome__text_size {
+    margin-bottom: 42px;
+}
+.assortment {
+}
+.assortment__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.assortment__container_sizes {
+    gap: 31px;
+    margin-top: 25px;
+    margin-bottom: 102px;
+}
+.assortment__item {
+    width: 262px;
+    height: 323px;
+    background-color: #312F30;
+    border-radius: 10px;
+}
+.assortment__images {
+    border-radius: 10px 10px 0 0;
+    width: 262px;
+    height: 175px;
+}
+.assortment__title {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+.assortment__title_sizes {
+    margin-top: 28px;
+}
+.assortment__text {
+    font-size: 16px;
+    text-align: center;
+    opacity: 0.7;
+}
+.assortment__text_sizes {
+    margin-top: 13px;
+    margin-bottom: 30px;
+}
+.burger-preview {
+    background: #312f30;
+}
+
+.burger-preview__image {
+
+}
+
+.burger-preview__container-item {
+
+}
+
+.burger-preview__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 540px;
+}
+
+.burger-preview__container-item_size {
+    width: 371px;
+    height: 214px;
+}
+
+.burger-preview__title {
+    font-weight: 500;
+    font-size: 44px;
+}
+
+.burger-preview__text {
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.burger-preview__price {
+    font-weight: 500;
+    font-size: 20px;
+    color: #F6762C;
+}
+.burger-preview__price_small {
+    font-size: 16px;
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.btn_burger-preview-sizes {
+    margin-top: 11px;
+}
+
+.burger-preview-price_sizes {
+    margin-top: 13px;
+}
+
+.burger-preview__text_sizes {
+    margin-top: 24px;
+}
+.menu {
+
+}
+
+.menu__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.menu__container_sizes {
+    margin-bottom: 147px;
+    margin-top: 139px;
+    width: 1140px;
+    height: 630px;
+}
+
+.food-category {
+    width: 555px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.food-category_background-coffee {
+    background-image: url("./images/product-1.jpg");
+}
+.food-category_background-pizza {
+    background-image: url("./images/product-2.jpg");
+}
+.food-category_background-burger {
+    background-image: url("./images/product-3.jpg");
+}
+.food-category_background-shawarma {
+    background-image: url("./images/product-4.jpg");
+}
+.food-category__title {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.food-category__text {
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.7;
+}
+
+.food-category__text_sizes {
+    margin-top: 20px;
+}
+
+.food-category__price {
+    font-weight: 500;
+    font-size: 16px;
+    color: #f6762c;
+}
+
+.food-category__price_sizes {
+    margin-top: 11px;
+}
+
+.food-category__price_small {
+    text-decoration: line-through;
+
+    opacity: 0.5;
+}
+
+.btn_food-category-sizes {
+    margin-top: 11px;
+}
+.food-category__container {
+    padding: 62px 0;
+    width: 250px;
+    height: 175px;
+}
+.food-category__container_sizes-right {
+    padding-left: 290px;
+}
+.food-category__container_sizes-left {
+    padding-left: 50px;
+}
+.reviews {
+
+}
+
+.reviews__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 118px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reviews__container_sizes {
+    width: 851px;
+    height: 361px;
+}
+
+.reviews__image {
+}
+.reviews__icon {
+    width: 46px;
+    height: 47px;
+}
+.reviews__container-reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reviews__container-reviews_sizes {
+    width: 368px;
+    height: 225px;
+}
+
+.reviews__text {
+    font-size: 16px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.reviews__text_sizes {
+    margin-top: 46px;
+}
+
+.reviews__initials {
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+}
+
+.reviews__initials_sizes {
+    margin-top: 27px;
+}
+
+.reviews__country {
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.reviews__country_sizes {
+    margin-top: 2px;
+}
+
+
+/* Dowload */
+.download__title {
+    font-weight: 500;
+    font-size: 40px;
+}
+.download__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.download__container_sizes {
+    padding-top: 62px;
+    margin-top: 200px;
+}
+.download {
+    height: 170px;
+    background: #312f30;
+}
+
+
+
+/* Footer */
+
+.footer {
+}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__container_indentation {
+    margin-top: 87px;
+}
+.footer__section-contacts {
+    display: flex;
+    flex-direction: column;
+    height: 155px;
+} 
+
+.footer__logo {
+    width: 60px;
+    height: 60px;
+}
+
+.footer__icon {
+    width: 12px;
+    height: 10px;
+    align-self: end;
+    padding-right: 7px;
+}
+.footer__data-icon {
+    display: flex;
+}
+.footer__data {
+    font-size: 12px;
+    opacity: 0.8;
+}
+.footer__data_indentation {
+    margin: 9px 0 0 0;
+}
+
+.footer__nav {
+    height: 155px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer__title {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.footer__subtitle {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.footer__section-media {
+    display: flex;
+    flex-direction: column;
+    height: 155px;
+}
+
+.footer__media {
+    display: flex;
+    gap: 10px;
+}
+.footer__media_indentation{
+    margin-top: 16px;
+}
