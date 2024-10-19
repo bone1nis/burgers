@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
-/*Общие  стили*/
+/* General styles */
 body {
     font-family: "Roboto", sans-serif;
     background-color: #1C1C1C;
@@ -32,6 +32,23 @@ h1, h2, h3, h4, h5, h6 {
     width: 1142px;
     margin: 0 auto;
 }
+
+.btn {
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #F6762C;
+    font-weight: 500px;
+    transition: opacity 0.3s;
+    width: 165px;
+    height: 49px;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+/* Header */ 
 
 .header {
     display: flex;
@@ -76,20 +93,8 @@ h1, h2, h3, h4, h5, h6 {
     gap: 30px;
 }
 
-.btn {
-    color: #fff;
-    font-size: 16px;
-    border-radius: 5px;
-    background-color: #F6762C;
-    font-weight: 500px;
-    transition: opacity 0.3s;
-    width: 165px;
-    height: 49px;
-}
+/* Main */
 
-.btn:hover{
-    opacity: 0.9;
-}
 .main {
 
 }
@@ -141,6 +146,9 @@ h1, h2, h3, h4, h5, h6 {
 .welcome__text_size {
     margin-bottom: 42px;
 }
+
+/* Assortment */
+
 .assortment {
 }
 .assortment__container {
@@ -184,6 +192,8 @@ h1, h2, h3, h4, h5, h6 {
 .burger-preview {
     background: #312f30;
 }
+
+/* Burger-preview */
 
 .burger-preview__image {
 
@@ -238,6 +248,9 @@ h1, h2, h3, h4, h5, h6 {
 .burger-preview__text_sizes {
     margin-top: 24px;
 }
+
+/* Menu */
+
 .menu {
 
 }
@@ -255,6 +268,9 @@ h1, h2, h3, h4, h5, h6 {
     width: auto;
     height: auto;
 }
+
+/* Food-category */
+
 .food-category {
     width: 555px;
     height: 300px;
@@ -319,6 +335,9 @@ h1, h2, h3, h4, h5, h6 {
 .food-category__container_sizes-left {
     padding-left: 50px;
 }
+
+/* Reviews */
+
 .reviews {
 
 }
@@ -385,7 +404,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* Dowload */
+/* Download */
 
 .download__title {
     font-weight: 500;
@@ -476,6 +495,8 @@ h1, h2, h3, h4, h5, h6 {
 .footer__media_indentation{
     margin-top: 16px;
 }
+
+/* Media */
 
 @media (max-width: 1189px) {
     .container {
@@ -576,6 +597,12 @@ h1, h2, h3, h4, h5, h6 {
     }
     .download {
         height: auto;
+    }
+    .food-category_background-pizza {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("./images/product-2.jpg");
+    }
+    .food-category_background-shawarma {
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url("./images/product-4.jpg");
     }
 }
 @media (max-width: 403px) {
